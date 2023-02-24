@@ -1,7 +1,6 @@
 {
   "name": "practica1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "celsius": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmenSRM/Pr-ctica-1-Instalaci-n-Celsius.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarmenSRM/Pr-ctica-1-Instalaci-n-Celsius/issues"
+  },
+  "homepage": "https://github.com/CarmenSRM/Pr-ctica-1-Instalaci-n-Celsius#readme",
+  "description": ""
 }
