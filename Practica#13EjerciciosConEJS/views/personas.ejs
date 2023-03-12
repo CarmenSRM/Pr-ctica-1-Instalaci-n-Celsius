@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <!--Etiqueta que hacer referencia al estilo-->
+        <link href="assets/style.css" type="text/css" rel="stylesheet" /> 
+    </head>
+    <body>
+        <section>
+            <table>
+                <!--Se indica el nombre que mostrarán las columnas-->
+                <th>ID</th> 
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+
+                <!--Se crea un FOR que utilizando el JSON se enargará de imprimir los registros-->
+            <% for (let i = 0; i < personas.length; i++) { %>
+                <tr>
+                    <td><%= personas[i].id %></td>
+                    <td><%= personas[i].nombre %></td>
+                    <td><%= personas[i].apellidos %></td>
+                    <td><%= personas[i].edad %></td>
+                </tr>
+            <% } %>
+            </table>
+        </section>
+    </body>
+</html>

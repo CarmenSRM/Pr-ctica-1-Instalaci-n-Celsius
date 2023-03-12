@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <!--Etiqueta que hacer referencia al estilo-->
+        <link href="assets/style.css" type="text/css" rel="stylesheet" /> 
+    </head>
+    <body>
+        <header>
+            Hola desde el EJS <!--Mensaje que se muestra en la página-->
+            <!--Se imprime el mesnaje que informara el resultado de si el número es PAR o IMPAR-->
+            <h1> El número <%= ID %> es <%= ID  % 2 == 0 ? 'PAR' : 'IMPAR'%></h1>
+        </header>
+        <section>
+            <article>
+                <ul>
+                    <!--FOR que imprime los números consecutivos del 1 al número que se compara-->
+                    <% for(let i = 1; i <= ID; i++) { %>
+                        <li><%= i%></li>
+                    <% } %>
+                </ul>
+            </article>
+        </section>
+    </body>
+</html>
