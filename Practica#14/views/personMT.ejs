@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compstible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Se hacer referencia al directorio virtual y a la hoja de estilo -->
+	    <link href=/assets/style.css type=text/css rel=stylesheet />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Person Name: <%= ID %></h1><!-- Imprime el nombre dado-->
+        <h2>Mensaje: <%= Message %></h2><!-- Imprime el mensaje dado-->
+
+        <!-- Imprime el mensaje y el nombre dados un número determinado que también es dado -->
+        <% switch (Message) { 
+            case 'Bienvenido': %>
+                <% for(let i = 1; i <= Times; i++) { %>
+                    <p>Bienvenido <%= ID %> </p>
+                <% }
+             break;
+            case 'Adios': %>
+                <% for(let i = 1; i <= Times; i++) { %>
+                    <p>Adios <%= ID %> </p>
+                <% }
+             break;
+            case 'Hola': %>
+                <% for(let i = 1; i <= Times; i++) { %> 
+                    <p>Hola <%= ID %> </p>
+                <% }
+             break;
+            default: %>
+                <p>Mensaje invalido. Solo se permiten saludos como Bienvenido, Hola y Adios</p>
+            <% break;
+        }; %>
+    </body>
+</html>
+
